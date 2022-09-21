@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("./images/bg-intro-desktop.png");
+    height: 100vh;
+    font-size: 16px;
+    color: hsl(249, 10%, 26%);
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text-area {
+    width: 50%;
+    color: #fff;
+}
+
+.text-area h1 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+}
+
+.trial {
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    padding: 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.trial span {
+    font-weight: lighter;
+}
+
+form button {
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    padding: 1rem;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    margin: 1rem 0 .5rem 0;
+    padding: 1rem;
+    border: solid 1px hsl(246, 25%, 77%);
+    border-radius: 10px;
+    font-weight: 700;
+    outline: none;
+}
+
+form p {
+    text-align: center;
+    font-size: 10px;
+}
+
+a {
+    font-weight: bold;
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+
+.errMsg {
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: x-small;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+    text-align: end;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        width: 90%;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .text-area {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+}

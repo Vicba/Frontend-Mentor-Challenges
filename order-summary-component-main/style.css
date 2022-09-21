@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("./images/pattern-background-mobile.svg"), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    font-family: "Red Hat Display";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.card {
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+    overflow: hidden;
+    max-width: 25rem;
+    padding-bottom: 20px;
+}
+
+.card-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+p {
+    color: grey;
+}
+
+.plan {
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+}
+
+.text p {
+    color: black;
+    font-weight: bold;
+}
+
+.text span {
+    color: grey;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 15px 0;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: hsl(224, 23%, 55%);
+    transition: 0.2s ease-in-out;
+}

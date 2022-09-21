@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(218, 22%, 67%);
+    font-family: "Karla", sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: hsl(179, 62%, 43%);
+}
+
+.community h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0px #b8c2c6;
+    border-radius: 10px;
+}
+
+.box {
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.subscription {
+    width: 50%;
+    background: hsl(179, 62%, 43%);
+    color: #fff;
+    border-radius: 0 0 0 10px;
+}
+
+.subscription h3 {
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: hsl(204, 43%, 93%);
+}
+
+.price span {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.subscription p {
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.why {
+    width: 50%;
+    background: hsl(179, 64%, 48%);
+    color: hsl(204, 43%, 93%);
+    border-radius: 0 0 10px 0;
+}
+
+.why h3 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        height: auto;
+    }
+
+    .card {
+        width: 90%;
+        margin: 5rem 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .subscription {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .why {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+}

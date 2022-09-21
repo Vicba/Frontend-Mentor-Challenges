@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit";
+}
+
+.card {
+    width: 320px;
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.image {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image #nft-image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0;
+    transition: 0.5s all ease-in;
+    background-color: rgba(0, 255, 247, 0.5);
+    border-radius: 1rem;
+}
+
+.image:hover .overlay {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card-content {
+    color: hsl(215, 31%, 54%);
+    margin: 15px;
+}
+
+h2 {
+    color: #fff;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.eth::before {
+    content: url("./images/icon-ethereum.svg");
+    margin-right: 5px;
+}
+
+.time::before {
+    content: url("./images/icon-clock.svg");
+    margin-right: 5px;
+}
+
+hr {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid hsl(215, 31%, 54%);
+}
+
+.creator {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.creator img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover,
+h2:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.15s ease-in-out;
+}

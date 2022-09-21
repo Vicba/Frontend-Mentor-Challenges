@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-size: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+main {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.card-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.reviews-text {
+    max-width: 44.5rem;
+}
+
+.reviews-number {
+    margin-bottom: 2.5rem;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    line-height: 4, 8rem;
+    letter-spacing: -0.175rem;
+    margin: 0;
+}
+
+.heading-paragraph {
+    color: hsl(303, 10%, 53%);
+    line-height: 2.5rem;
+    letter-spacing: -0.05rem;
+}
+
+.reviews-stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.review {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 40.7rem;
+    width: 100%;
+    background-color: hsl(300, 24%, 96%);
+    height: 62px;
+    border-radius: 1.2rem;
+    padding: 20px;
+}
+
+.reviews-stars .review:not(:last-child) {
+    margin-left: -6rem;
+    margin-bottom: 1.6rem;
+}
+
+.reviews-stars .review:first-child {
+    margin-left: -12rem;
+}
+
+.star-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 11.7rem;
+    margin-right: 3.2rem;
+}
+
+.review-title {
+    font-size: 1.3rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    letter-spacing: -0.022rem;
+    line-height: 2.2rem;
+    text-align: left;
+    margin: 2;
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.testimonials .article {
+    background-color: hsl(300, 43%, 22%);
+    max-width: 32.4rem;
+    width: 100%;
+    padding: 4rem 3.2rem;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.testimonials .article:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.testimonials .article:nth-child(3) {
+    margin-top: 4rem;
+}
+
+.buyer-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.6rem;
+}
+
+.buyer-image img {
+    max-width: 4rem;
+    width: 100%;
+    max-height: 40rem;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 2.3rem;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: -0.025rem;
+    margin-bottom: 0.5rem;
+}
+
+.status {
+    font-size: 1.3rem;
+    color: hsl(333, 80%, 67%);
+    letter-spacing: -0.025rem;
+}
+
+.testimonial-description {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    letter-spacing: -0.025rem;
+}
+
+@media screen and (max-width: 910px) {
+    h1 {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.114rem;
+        text-align: center;
+    }
+
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review-title {
+        width: 100%;
+    }
+
+    .review {
+        justify-content: center;
+        width: 160%;
+        flex-direction: column;
+        max-width: none;
+        padding-right: 3.2rem;
+        padding-left: 3.2rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .reviews-text {
+        margin-bottom: 6rem;
+    }
+
+    .review-title {
+        text-align: left;
+        text-align: center;
+    }
+
+    .star-icon {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1.6rem;
+        margin-right: 0;
+    }
+
+    .reviews-stars {
+        width: 100%;
+    }
+
+    .reviews-stars .review:first-child {
+        margin-left: 0;
+    }
+
+    .reviews-stars .review:not(:last-child) {
+        margin-left: 0;
+    }
+
+    .testimonials {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .testimonials .article {
+        max-width: none;
+    }
+
+    body {
+        text-align: center;
+        background-image: url("./images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+    }
+}

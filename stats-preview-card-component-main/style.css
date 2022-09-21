@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    color: white;
+}
+
+.card {
+    width: 80%;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 50%;
+    margin: 60px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.content p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.image {
+    width: 50%;
+    background-image: url("./images/image-header-desktop.jpg");
+    border-radius: 0 20px 20px 0;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #9553D2;
+    opacity: 0.3;
+    border-radius: 0 20px 20px 0;
+}
+
+.numbers {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number h3 {
+    margin-bottom: 5px;
+}
+
+.number p {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        height: auto;
+    }
+
+    .card {
+        margin: 3rem 0;
+        width: 90%;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .image {
+        background-image: url("./images/image-header-mobile.jpg") center;
+        background-size: cover;
+        width: 100%;
+        height: 20rem;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+
+    .overlay {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .content {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .numbers {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca";
+}
+
+.cards {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.card {
+    width: 33%;
+    padding: 40px;
+}
+
+.card img {
+    margin-bottom: 10px;
+}
+
+.orange,
+.orange button:hover {
+    background: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.blue,
+.blue button:hover {
+    background: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.green,
+.green button:hover {
+    background: hsl(179, 100%, 13%);
+    color: white;
+}
+
+.card h2 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+
+.orange button {
+    color: hsl(31, 77%, 52%);
+}
+
+.blue button {
+    color: hsl(184, 100%, 22%);
+}
+
+.green button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        height: auto;
+    }
+
+    .cards {
+        width: 90%;
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

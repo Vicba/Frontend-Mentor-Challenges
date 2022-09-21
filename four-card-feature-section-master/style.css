@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 14px;
+    height: 100vh;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1:first-of-type {
+    font-weight: 200;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card {
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(17, 32, 160, 0.04),
+        0 6px 40px rgba(76, 78, 97, 0.1);
+    text-align: start;
+
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    text-align: start;
+}
+
+.card img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+}
+
+.cyan {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.red {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.orange {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.blue {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
