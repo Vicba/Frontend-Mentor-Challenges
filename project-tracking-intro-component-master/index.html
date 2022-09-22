@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Project tracking intro component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  Product
-  Features
-  Pricing
-  Login
 
-  New
-  Monograph Dashboard
+  <main>
+    <div class="grey-box"></div>
+    <div class="wrapper">
+      <nav>
+        <img src="./images/logo.svg" alt="" />
+        <p class="navbar_btn">
+          <img id="navBarBtn" src="./images/icon-hamburger.svg" alt="" onclick="viewNavLinks()" />
+        </p>
+        <ul>
+          <li>Product</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <hr class="gray_links" />
+          <li>Login</li>
+        </ul>
+      </nav>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+      <div class="hero">
+        <div class="left_content">
+          <p class="subtitle"><a>New</a> Monograph Dashboard</p>
+          <h1>
+            Powerful insights <br />
+            into your team
+          </h1>
+          <p class="text">
+            Project planning and time tracking <br />
+            for agile teams
+          </p>
+          <div class="buttons">
+            <button class="schedule">Schedule a demo</button>
+            <p>to see a live preview</p>
+          </div>
+        </div>
+        <div class="right_content">
+          <img src="./images/illustration-devices.svg" alt="" srcset="" />
+        </div>
+      </div>
 
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    </div>
+  </main>
 </body>
+
 </html>
