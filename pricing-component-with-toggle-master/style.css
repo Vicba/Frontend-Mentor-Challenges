@@ -93,3 +93,20 @@ hr:first-of-type {
     letter-spacing: 2px;
     background-color: #fff;
 }
+
+@media screen and (max-width: 420px) {
+    body {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .options {
+        width: 90%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .option {
+        width: 100%;
+    }
+}
