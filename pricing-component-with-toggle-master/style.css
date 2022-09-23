@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background: top right url("./images/bg-top.svg"), bottom left url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(240, 78%, 98%);
+}
+
+h1 {
+    color: hsl(233, 13%, 49%);
+}
+
+.options {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.option p {
+    margin: 10px;
+}
+
+.option p:nth-of-type(2) {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.yearPrice {
+    text-decoration: line-through;
+    margin-bottom: 30px;
+}
+
+
+.option {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid hsl(236, 72%, 79%);
+    width: 33%;
+}
+
+.pro {
+    background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 110%;
+    width: 40%;
+    overflow: visible;
+}
+
+.optionBtn {
+    width: 80%;
+    padding: 10px 0;
+    margin-top: 2rem;
+    background: linear-gradient(30deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+hr:first-of-type {
+    margin-top: 3rem;
+}
+
+#proBtn {
+    width: 80%;
+    padding: 10px 0;
+    margin-top: 5rem;
+    color: hsl(237, 63%, 64%);
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background-color: #fff;
+}
