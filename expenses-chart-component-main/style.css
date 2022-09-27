@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color-1: hsl(10, 79%, 65%);
+    --primary-color-2: hsl(186, 34%, 60%);
+
+    --secondary-color-1: hsl(25, 47%, 15%);
+    --secondary-color-2: hsl(28, 10%, 53%);
+    --secondary-color-3: hsl(27, 66%, 92%);
+    --secondary-color-4: hsl(33, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--secondary-color-3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Typeography General*/
+
+p {
+    line-height: 1.6em;
+}
+
+
+.container {
+    max-width: 30rem;
+}
+
+header {
+    background-color: var(--primary-color-1);
+    color: var(--secondary-color-4);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.logo-circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20rem;
+    background-color: var(--secondary-color-1);
+    position: relative;
+}
+
+.logo-circle::after {
+    position: absolute;
+    border: 2px solid var(--secondary-color-4);
+    height: 100%;
+    width: 100%;
+    content: '';
+    clear: both;
+    top: 0;
+    left: -25px;
+    border-radius: 100%;
+}
+
+main {
+    padding: 3rem;
+    border-radius: 1.8rem;
+    background-color: var(--secondary-color-4);
+    width: auto;
+}
+
+.main__title {
+    padding-bottom: 2rem;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.bar {
+    min-width: 2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.bar :not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.bar p {
+    color: var(--secondary-color-2);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.barchart__tooltip {
+    background-color: var(--secondary-color-1);
+    /* font-size: 1.7rem; */
+    padding: 0.5rem;
+    color: var(--secondary-color-4);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+}
+
+.bar:hover .barchart__tooltip {
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.barchart__stroke {
+    background-color: var(--primary-color-1);
+    border-radius: 0.5rem;
+}
+
+.divider {
+    border: 0.00001px solid var(--secondary-color-3);
+    margin-top: 3rem;
+}
+
+.result {
+    padding-top: 3rem;
+}
+
+.result-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-value p {
+    text-align: right;
+    font-weight: 700;
+}
+
+.result-value :last-child span {
+    display: block;
+    text-align: right;
+    font-weight: normal;
+    color: var(--secondary-color-2);
+}
+
+.result-title {
+    color: var(--secondary-color-2);
+}
+
+.result-value .value {
+    font-size: 2rem;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myChart {
+    border: none;
+    font-family: "dm sans", sans-serif !important;
+}
