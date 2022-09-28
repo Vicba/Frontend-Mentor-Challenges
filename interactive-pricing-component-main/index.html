@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <div id="ipc-outer-bg-container">
+    <div id="ipc-inner-container">
+      <div id="ipc-circle-bg-container"></div>
+      <h3>Simple, traffic-based pricing</h3>
+      <h4>Sign-up for our 30-day trial. No credit card required.</h4>
 
-  Pageviews
-  $ /month
+      <div id="ipc-main-component-container">
+        <div id="ipc-slider-container">
+          <div id="pageviews-for-price-container">
+            <p id="pageviews">100K Pageviews</p>
+            <p id="price">$16.00<span id="price-per-span"> / month</span></p>
+          </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+          <input name="price-slider" id="price-slider" type="range" min="-2" max="2" step="1" value="0"
+            aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0" aria-label="price range slider" />
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+          <div id="billing-interval-container">
+            <p id="monthly-billing">Monthly Billing</p>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+            <label class="switch">
+              <input id="interval-switch" type="checkbox" aria-checked="false"
+                aria-label="yearly payment interval toggle switch" />
+              <span class="toggle-slider round"></span>
+            </label>
+
+            <p id="yearly-billing">Yearly Billing</p>
+            <div id="discount-container">
+              <p id="yearly-discount-lg">25% discount</p>
+              <p id="yearly-discount-sm">-25%</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="ipc-cta-container">
+          <div class="cta-inner-container">
+            <div id="cta-list-container">
+              <ul>
+                <li>Unlimited websites</li>
+                <li>100% data ownership</li>
+                <li>Email reports</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cta-inner-container">
+            <a id="cta-link" href="#" target="_blank">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
